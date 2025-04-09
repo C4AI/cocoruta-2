@@ -1,0 +1,60 @@
+{
+  "metrics": [
+    {
+      "metric_id": "bleu@evaluate",
+      "parameters": {},
+      "score": {
+        "bleu": 0.6962412267931914,
+        "precisions": [
+          0.805643914349526,
+          0.7320308939283823,
+          0.6948054150045958,
+          0.6646519088751333
+        ],
+        "brevity_penalty": 0.9637785088725006,
+        "length_ratio": 0.9644189459907717,
+        "translation_length": 1152498,
+        "reference_length": 1195018
+      },
+      "elapsed_time": 10.237341353
+    },
+    {
+      "metric_id": "rouge@evaluate",
+      "parameters": {
+        "use_aggregator": true,
+        "use_stemmer": true
+      },
+      "score": {
+        "rouge1": 0.8128873929416512,
+        "rouge2": 0.7465801126481866,
+        "rougeL": 0.7969671189306495,
+        "rougeLsum": 0.8031885025464887
+      },
+      "elapsed_time": 47.289045012
+    },
+    {
+      "metric_id": "bertscore@evaluate",
+      "parameters": {
+        "lang": "pt",
+        "batch_size": 32
+      },
+      "score": {
+        "precision": 0.9204973422646134,
+        "recall": 0.9239308683496166,
+        "f1": 0.921755870295942,
+        "hashcode": "bert-base-multilingual-cased_L9_no-idf_version=0.3.12(hug_trans=4.50.0)"
+      },
+      "elapsed_time": 79.27202317
+    },
+    {
+      "metric_id": "moverscore",
+      "parameters": {
+        "batch_size": 32
+      },
+      "score": {
+        "mover_score": 0.7864972764739313
+      },
+      "elapsed_time": 1526.64925936
+    }
+  ]
+}
